@@ -54,7 +54,18 @@ Mechanical odometers allowed drivers to:
 Modern vehicles continue to use odometry systems, although most now rely on digital sensors instead of mechanical gears.
 
 ---
+## 🤖 Modern Robotics Odometry
 
+```text
+         IMU
+          |
+          V
+ Left ----+---- Right
+ Encoder  |    Encoder
+          |
+          V
+      Pose(x,y,θ)
+```
 ## 🤖 The Rise of Robotic Odometry
 
 As robotics evolved, engineers expanded the concept of odometry beyond simple distance measurement.
