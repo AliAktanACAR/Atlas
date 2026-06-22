@@ -1,7 +1,5 @@
 # 📜 History of Odometry
 
-![Ancient Odometer](images/ancient-odometer.jpg)
-
 ## Introduction
 
 The concept of odometry is much older than modern robotics.
@@ -28,8 +26,6 @@ These early systems relied entirely on gears and rotating wheels.
 ---
 
 ## ⚙️ Mechanical Odometry
-
-![Mechanical Odometer](images/mechanical-odometer.jpg)
 
 For centuries, odometers remained purely mechanical devices.
 
@@ -60,8 +56,6 @@ Modern vehicles continue to use odometry systems, although most now rely on digi
 ---
 
 ## 🤖 The Rise of Robotic Odometry
-
-![Robot Odometry](images/robot-odometry.png)
 
 As robotics evolved, engineers expanded the concept of odometry beyond simple distance measurement.
 
