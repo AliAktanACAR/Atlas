@@ -1,4 +1,4 @@
-# What is Odometry?
+# 📍 What is Odometry?
 
 ## Introduction
 
@@ -18,7 +18,7 @@ Together, these values describe the robot's location and direction at any given 
 
 ---
 
-## Why is Odometry Important?
+## 🚀 Why is Odometry Important?
 
 Without localization, a robot has no understanding of its position relative to the environment.
 
@@ -34,20 +34,20 @@ For competitive robotics, odometry is often the foundation of advanced autonomou
 
 ---
 
-## Basic Principle
+## ⚙️ Basic Principle
 
 The core idea behind odometry is simple:
 
-1. Measure wheel movement.
-2. Measure robot rotation.
-3. Calculate position changes.
-4. Update the robot's estimated pose.
+1. Measure wheel movement
+2. Measure robot rotation
+3. Calculate position changes
+4. Update the robot's estimated pose
 
 By repeating this process many times per second, the robot can maintain a continuous estimate of its location.
 
 ---
 
-## Pose Representation
+## 📐 Pose Representation
 
 A robot's pose is commonly represented as:
 
@@ -71,7 +71,7 @@ This indicates that the robot is located at coordinates (24.5, 36.2) and facing 
 
 ---
 
-## Advantages
+## ✅ Advantages
 
 * Fast calculations
 * High update rate
@@ -81,7 +81,7 @@ This indicates that the robot is located at coordinates (24.5, 36.2) and facing 
 
 ---
 
-## Limitations
+## ⚠️ Limitations
 
 Odometry is not perfect.
 
@@ -98,9 +98,8 @@ For this reason, odometry is often combined with other localization systems.
 
 ---
 
-## Conclusion
+## 🎯 Conclusion
 
 Odometry is the foundation of modern robot localization. By continuously measuring movement and rotation, a robot can estimate its position and orientation in real time.
 
 Many advanced navigation systems, including path following and autonomous navigation frameworks, rely on accurate odometry as their primary source of position information.
-
