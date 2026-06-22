@@ -150,9 +150,9 @@ How Odometry Works
         ↓
 Tracking Wheels
         ↓
-IMU
+       IMU
         ↓
-GPS
+       GPS
         ↓
 Computer Vision
         ↓
