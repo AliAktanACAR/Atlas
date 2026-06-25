@@ -90,7 +90,7 @@ atlas/
 - [ ] Three Wheel Odometry
 
 ### Version 0.2
-- [ ] Two Wheel Odometry
+- [ ] Two Wheel + IMU Odometry
 - [ ] Drive To Point
 - [ ] Turn To Angle
 
