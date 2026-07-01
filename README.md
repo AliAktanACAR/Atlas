@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/BannerForAtlas.png" alt="Atlas Banner" width="100%">
+  <img src="assets/BannerForAtlas1.png" alt="Atlas Banner" width="100%">
 </p>
 
 <div align="center">
