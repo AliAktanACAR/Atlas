@@ -1,16 +1,22 @@
+<p align="center">
+  <img src="assets/BannerForAtlas.png" alt="Atlas Banner" width="100%">
+</p>
+
+<div align="center">
+
 # 🌍 Atlas
 
-**Advanced Odometry, Motion Control & Autonomous Navigation Library**
+### Advanced Odometry, Motion Control & Autonomous Navigation Library
 
 Atlas is an open-source robotics library focused on localization, motion control, and autonomous navigation for competitive robotics platforms such as VEX V5 and FRC.
 
-The project is designed to provide reusable components for building autonomous robots, ranging from basic odometry to advanced path following algorithms.
+The project provides reusable components for building autonomous robots, from accurate odometry and PID-based motion control to advanced path following algorithms.
 
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 ![Status](https://img.shields.io/badge/status-active%20development-yellow.svg)
 ![Platforms](https://img.shields.io/badge/platforms-VEX%20V5%20%7C%20FRC%20%7C%20Java-orange.svg)
 
----
+</div>
 
 # 📖 Table of Contents
 
