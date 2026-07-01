@@ -178,19 +178,18 @@ Math Behind Atlas
 
 ---
 
-# 📂 Source Layout
+## 📂 Source Layout
 
-```text
-src/
-│
-├── math/
-├── sensors/
-├── control/
-├── pid/
-├── goto/
-├── purepursuit/
-└── examples/
-```
+| Module                             | Description                                          |
+| ---------------------------------- | ---------------------------------------------------- |
+| [`math/`](src/math/)               | Mathematical utilities, vectors, poses, and geometry |
+| [`sensors/`](src/sensors/)         | Sensor interfaces and hardware abstractions          |
+| [`control/`](src/control/)         | Motion control algorithms and utilities              |
+| [`pid/`](src/pid/)                 | PID controller implementations                       |
+| [`goto/`](src/goto/)               | Drive-to-point and turn-to-angle algorithms          |
+| [`purepursuit/`](src/purepursuit/) | Pure Pursuit path following                          |
+| [`examples/`](src/examples/)       | Example projects and sample code                     |
+
 
 ---
 
