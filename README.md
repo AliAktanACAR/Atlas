@@ -177,18 +177,31 @@ Math Behind Atlas
 ```
 
 ---
+## 📂 Source Layout
+
+```text
+src/
+├── 📁 [math](src/math/)
+├── 📁 [sensors](src/sensors/)
+├── 📁 [control](src/control/)
+├── 📁 [PID](src/PID/)
+├── 📁 [GoTo](src/GoTo/)
+├── 📁 [PurePursuit](src/PurePursuit/)
+└── 📁 [examples](src/examples/)
+```
+
 
 ## 📂 Source Layout
 
-| Module                             | Description                                          |
-| ---------------------------------- | ---------------------------------------------------- |
-| [`math/`](src/math/)               | Mathematical utilities, vectors, poses, and geometry |
-| [`sensors/`](src/sensors/)         | Sensor interfaces and hardware abstractions          |
-| [`control/`](src/control/)         | Motion control algorithms and utilities              |
-| [`pid/`](src/pid/)                 | PID controller implementations                       |
-| [`goto/`](src/goto/)               | Drive-to-point and turn-to-angle algorithms          |
-| [`purepursuit/`](src/purepursuit/) | Pure Pursuit path following                          |
-| [`examples/`](src/examples/)       | Example projects and sample code                     |
+| Module | Description |
+|--------|-------------|
+| [`math/`](src/math/) | Mathematical utilities, vectors, poses, and transformations |
+| [`sensors/`](src/sensors/) | Sensor interfaces and hardware abstractions |
+| [`control/`](src/control/) | Shared motion control utilities |
+| [`PID/`](src/PID/) | PID controller implementations |
+| [`GoTo/`](src/GoTo/) | Drive-to-point and turn-to-angle algorithms |
+| [`PurePursuit/`](src/PurePursuit/) | Pure Pursuit path following |
+| [`examples/`](src/examples/) | Example projects and sample code |
 
 
 ---
