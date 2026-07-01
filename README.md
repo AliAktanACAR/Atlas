@@ -152,25 +152,25 @@ How Odometry Works
 Tracking Wheels
         │
         ▼
-IMU
+       IMU
         │
         ▼
-GPS
+       GPS
         │
         ▼
-Computer Vision
+Computer Vision 
         │
         ▼
-Sensor Fusion
+  Sensor Fusion
         │
         ▼
-PID Control
+   PID Control
         │
         ▼
-Pure Pursuit
+  Pure Pursuit
         │
         ▼
-Path Planning
+  Path Planning
         │
         ▼
 Math Behind Atlas
