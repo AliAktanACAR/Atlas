@@ -6,6 +6,30 @@ Atlas is an open-source robotics library focused on localization, motion control
 
 The project is designed to provide reusable components for building autonomous robots, ranging from basic odometry to advanced path following algorithms.
 
+![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
+![Status](https://img.shields.io/badge/status-active%20development-yellow.svg)
+![Platforms](https://img.shields.io/badge/platforms-VEX%20V5%20%7C%20FRC%20%7C%20Java-orange.svg)
+
+---
+
+# 📖 Table of Contents
+
+* [Features](#-features)
+* [Project Goals](#-project-goals)
+* [Core Concepts](#-core-concepts)
+* [Project Structure](#-project-structure)
+* [Supported Platforms](#-supported-platforms)
+* [Getting Started](#-getting-started)
+* [Quick Start Example](#-quick-start-example)
+* [Development Roadmap](#-development-roadmap)
+* [Documentation](#-documentation)
+* [Learning Path](#️-learning-path)
+* [Source Layout](#-source-layout)
+* [FAQ](#-faq)
+* [Contributing](#-contributing)
+* [Acknowledgments](#-acknowledgments)
+* [License](#-license)
+
 ---
 
 # ✨ Features
@@ -88,6 +112,54 @@ Each module is designed to be independent so that individual components can be u
 
 ---
 
+# 🧰 Getting Started
+
+These steps outline the general workflow for bringing Atlas into a robot project. Exact steps may vary slightly depending on your platform (VEX V5 or FRC) and build system.
+
+### Prerequisites
+
+* A working VEX V5 or FRC project template
+* Java or C++ toolchain configured for your platform (depending on target)
+* Basic familiarity with odometry and closed-loop control concepts (see [Documentation](#-documentation))
+
+### Installation
+
+1. Clone the repository into your workspace:
+   ```bash
+   git clone https://github.com/your-org/atlas.git
+   ```
+2. Copy or link the relevant module folders (`math/`, `odometry/`, `control/`, `path/`) into your project's source directory.
+3. Include the required headers/imports for the modules you plan to use.
+4. Build your project as usual — Atlas modules are designed to compile independently, so you only need to bring in what you use.
+
+> 💡 Tip: Start with the `math/` and `odometry/` modules first, since most other components depend on them for pose and position data.
+
+---
+
+# 🧪 Quick Start Example
+
+A minimal example showing the general shape of how Atlas components are intended to work together once implemented:
+
+```java
+// Initialize odometry
+ThreeWheelOdometry odometry = new ThreeWheelOdometry(leftEncoder, rightEncoder, backEncoder, trackWidth);
+
+// Update pose estimate each control loop
+Pose2D currentPose = odometry.update();
+
+// Drive to a target point using closed-loop control
+DriveToPoint driveController = new DriveToPoint(odometry, pidConfig);
+driveController.setTarget(new Vector2D(24, 36));
+
+while (!driveController.isFinished()) {
+    driveController.update();
+}
+```
+
+> ⚠️ This example is illustrative of the intended API shape. Refer to the module documentation and source comments for the exact, up-to-date usage as each component is implemented.
+
+---
+
 # 🛠 Development Roadmap
 
 ## Version 0.1
@@ -149,7 +221,7 @@ History Of Odometry
 How Odometry Works
         │
         ▼
-Tracking Wheels
+ Tracking Wheels
         │
         ▼
        IMU
@@ -158,7 +230,7 @@ Tracking Wheels
        GPS
         │
         ▼
-Computer Vision 
+ Computer Vision 
         │
         ▼
   Sensor Fusion
@@ -203,12 +275,42 @@ src/
 | [`PurePursuit/`](src/PurePursuit/) | Pure Pursuit path following |
 | [`examples/`](src/examples/) | Example projects and sample code |
 
+---
+
+# ❓ FAQ
+
+**Is Atlas ready for use in a competition robot right now?**
+Atlas is under active development. Some modules are still marked as in-progress on the roadmap, so it's best to check the version roadmap above before relying on a specific feature in a competition setting.
+
+**Does Atlas work with both VEX V5 and FRC?**
+Yes — the core math, odometry, and control modules are designed to be platform-agnostic where possible, with platform-specific glue code kept separate so it's easy to adapt Atlas to either ecosystem.
+
+**Can I use just one module without pulling in the whole library?**
+Yes. Every module under `src/` is built to be as independent as possible, so you can, for example, use only the PID controller without bringing in the path-following code.
+
+**Where should I start if I'm new to odometry?**
+Start with the [Documentation](#-documentation) table above — it's ordered as a learning path, beginning with "What Is Odometry?" and building up to the math behind Atlas.
 
 ---
 
 # 🤝 Contributing
 
 Contributions of any kind are welcome. If you find a bug, have an idea for an improvement, or would like to implement a new feature, feel free to open an issue or submit a pull request.
+
+A few things that help keep contributions smooth:
+
+* Check open issues before starting work to avoid duplicate effort.
+* Keep pull requests focused on a single feature or fix where possible.
+* Add or update relevant documentation under `docs/` when introducing new concepts or modules.
+* Follow the existing structure and naming conventions used in the `src/` layout.
+
+Whether it's fixing a typo, improving a doc page, or adding a new algorithm, all contributions help move the project forward.
+
+---
+
+# 🙏 Acknowledgments
+
+Atlas is inspired by the broader competitive robotics community — including the odometry, motion control, and path-following work shared publicly by VEX and FRC teams over the years. Thanks to everyone who contributes code, documentation, issues, and ideas to help this project grow.
 
 ---
 
